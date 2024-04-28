@@ -34,7 +34,7 @@ const Nav = () => {
   );
 
   return (
-    <div className="navbar bg-base-100">
+    <div className="navbar bg-white z-10 fixed container mx-auto">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -104,7 +104,7 @@ const Nav = () => {
         </label>
       </div>
       {/* dynamic login register button and profile button */}
-      <div className="navbar-end space-x-1 md:space-x-4">
+      <div className=" navbar-end space-x-1 md:space-x-4">
         <Link>
           <button className="bg-red-700 font-semibold py-1 hover:scale-105 transition-transform px-1 md:px-3 rounded-lg text-white">
             Login
