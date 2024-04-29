@@ -3,12 +3,12 @@ import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { useContext, useState } from "react";
 import { useForm } from "react-hook-form";
 import { AuthContext } from "../providers/FirebaseProvider";
-import { FaGoogle, FaTwitter, FaGithub } from "react-icons/fa";
+import { FaGoogle, FaGithub } from "react-icons/fa";
 import toast from "react-hot-toast";
 const Login = () => {
   const [showPassword, setShowPassword] = useState(false);
 
-  const {loginUser, googleLogIn, githubLogIn, twitterLogIn } =
+  const {loginUser, googleLogIn, githubLogIn } =
     useContext(AuthContext);
 
   const navigate = useNavigate();
@@ -129,9 +129,6 @@ const Login = () => {
           </button>
           <button onClick={() => handleSocialLogin(githubLogIn)}>
             <FaGithub size={30} />
-          </button>
-          <button onClick={() => handleSocialLogin(twitterLogIn)}>
-            <FaTwitter size={30} />
           </button>
         </div>
         <p className="text-xs text-center sm:px-6">
