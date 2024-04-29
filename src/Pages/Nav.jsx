@@ -6,7 +6,7 @@ import toast from "react-hot-toast";
 
 const Nav = () => {
   const { user, logOut } = useContext(AuthContext);
-  console.log(user)
+  console.log(user);
 
   const [theme, setTheme] = useState("light");
 
@@ -81,7 +81,9 @@ const Nav = () => {
             {navLinks}
           </ul>
         </div>
-        <a className="btn btn-ghost md:text-3xl">TourFusion</a>
+        <a className="font-bold md:text-3xl">
+          <span className="text-red-700">Tour</span>Fusion
+        </a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1 gap-4">{navLinks}</ul>
@@ -136,7 +138,7 @@ const Nav = () => {
             </summary>
             <div className="p-4  menu dropdown-content z-[1] bg-white shadow-xl rounded-box w-80 space-y-8 ">
               <div className="text-center space-y-2">
-              <div className="">
+                <div className="">
                   {user.photoURL ? (
                     <img className="w-1/3 mx-auto" src={user.photoURL} alt="" />
                   ) : (
@@ -145,7 +147,7 @@ const Nav = () => {
                     </button>
                   )}
                 </div>
-                <div className="font-bold h-24">
+                <div className="font-bold ">
                   {user.displayName && <h1>{user.displayName}</h1>}
                 </div>
               </div>
@@ -156,7 +158,6 @@ const Nav = () => {
                 >
                   Log Out
                 </button>
-               
               </div>
             </div>
           </details>
