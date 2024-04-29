@@ -1,0 +1,58 @@
+[
+    {
+      "image": "https://example.com/bangkok.jpg",
+      "tourists_spot_name": "Bangkok",
+      "country_Name": "Thailand",
+      "location": "Bangkok, Thailand",
+      "short_description": "Bangkok, the capital city of Thailand, is a vibrant metropolis known for its ornate temples, bustling markets, vibrant nightlife, and delicious street food.",
+      "average_cost": 21500,
+      "seasonality": "All Year Round",
+      "travel_time": 5,
+      "totalVisitorsPerYear": 10000000
+    },
+    {
+      "image": "https://i.ibb.co/qxcLM4m/Chiang-Mai.jpg",
+      "tourists_spot_name": "Chiang Mai",
+      "country_Name": "Thailand",
+      "location": "Chiang Mai, Thailand",
+      "short_description": "Chiang Mai is a charming city in northern Thailand known for its ancient temples, picturesque Old City, vibrant markets, and lush mountain scenery.",
+      "average_cost": 76800,
+      "seasonality": "Cool Season (November - February)",
+      "travel_time": 4,
+      "totalVisitorsPerYear": 3000000
+    },
+    {
+      "image": "https://example.com/ayutthaya.jpg",
+      "tourists_spot_name": "Ayutthaya",
+      "country_Name": "Thailand",
+      "location": "Ayutthaya, Thailand",
+      "short_description": "Ayutthaya is a UNESCO World Heritage Site known for its ancient ruins, majestic temples, and rich history. It offers insights into Thailand's glorious past.",
+      "average_cost": 56700,
+      "seasonality": "All Year Round",
+      "travel_time": 2,
+      "totalVisitorsPerYear": 500000
+    },
+    {
+      "image": "https://example.com/phuket.jpg",
+      "tourists_spot_name": "Phuket",
+      "country_Name": "Thailand",
+      "location": "Phuket, Thailand",
+      "short_description": "Phuket is Thailand's largest island, renowned for its stunning beaches, vibrant nightlife, water sports, and luxurious resorts. It is a popular tourist destination.",
+      "average_cost": 45000,
+      "seasonality": "Dry Season (November - April)",
+      "travel_time": 5,
+      "totalVisitorsPerYear": 6000000
+    },
+    {
+      "image": "https://example.com/phi-phi-islands.jpg",
+      "tourists_spot_name": "Phi Phi Islands",
+      "country_Name": "Thailand",
+      "location": "Phi Phi Islands, Thailand",
+      "short_description": "The Phi Phi Islands are a group of stunning islands in the Andaman Sea known for their crystal-clear waters, limestone cliffs, and vibrant marine life. It is a paradise for snorkelers and divers.",
+      "average_cost": 5470,
+      "seasonality": "Dry Season (November - April)",
+      "travel_time": 6,
+      "totalVisitorsPerYear": 2000000
+    }
+  ]
+  
