@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "image":"https://i.ibb.co/Z65MzJk/review-image.jpg",
+        "name": "John Doe",
+        "designation": "Real Estate Agent",
+        "company": "Prime Realty",
+        "review_details": "John was incredibly helpful in finding our dream home. He was knowledgeable, responsive, and made the whole process smooth and stress-free. Highly recommend!"
+    },
+    {
+        "id": 2,
+        "image": "https://i.ibb.co/Z65MzJk/review-image.jpg",
+        "name": "Jane Smith",
+        "designation": "Broker",
+        "company": "Elite Properties",
+        "review_details": "Jane went above and beyond to help us sell our house quickly and at a great price. Her expertise and negotiation skills were top-notch. Very satisfied with her service!"
+    },
+    {
+        "id": 3,
+        "image": "https://i.ibb.co/Z65MzJk/review-image.jpg",
+        "name": "Michael Brown",
+        "designation": "Real Estate Consultant",
+        "company": "Metro Homes",
+        "review_details": "Michael was very professional and always available to answer any questions we had. He helped us find a beautiful home that met all our needs. Excellent service!"
+    },
+    {
+        "id": 4,
+        "image": "https://i.ibb.co/Z65MzJk/review-image.jpg",
+        "name": "Emily Johnson",
+        "designation": "Property Manager",
+        "company": "Urban Living",
+        "review_details": "Emily is a fantastic property manager. She is organized, efficient, and always takes care of any issues promptly. I feel confident knowing she is managing our property."
+    },
+    {
+        "id": 5,
+        "image": "https://i.ibb.co/Z65MzJk/review-image.jpg",
+        "name": "David Wilson",
+        "designation": "Real Estate Agent",
+        "company": "Skyline Realty",
+        "review_details": "David helped us find an amazing investment property. His market knowledge and negotiation skills were invaluable. We are thrilled with our purchase!"
+    }
+]

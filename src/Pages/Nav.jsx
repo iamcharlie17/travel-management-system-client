@@ -6,7 +6,7 @@ import toast from "react-hot-toast";
 
 const Nav = () => {
   const { user, logOut } = useContext(AuthContext);
-  console.log(user);
+  // console.log(user);
 
   const [theme, setTheme] = useState("light");
 
