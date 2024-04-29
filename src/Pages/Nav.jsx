@@ -1,7 +1,13 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
+import { AuthContext } from "../providers/FirebaseProvider";
+import { CgProfile } from "react-icons/cg";
+import toast from "react-hot-toast";
 
 const Nav = () => {
+  const { user, logOut } = useContext(AuthContext);
+  console.log(user)
+
   const [theme, setTheme] = useState("light");
 
   // --theme control--
@@ -14,6 +20,21 @@ const Nav = () => {
     } else {
       setTheme("light");
     }
+  };
+
+  const handleLogOut = (e) => {
+    e.preventDefault();
+    logOut()
+      .then(() =>
+        toast("Logged Out", {
+          duration: 1500,
+          style: {
+            background: "#3fb89a",
+            color: "white",
+          },
+        })
+      )
+      .catch((e) => console.log(e.message));
   };
 
   const navLinks = (
@@ -104,18 +125,56 @@ const Nav = () => {
         </label>
       </div>
       {/* dynamic login register button and profile button */}
-      <div className=" navbar-end space-x-1 md:space-x-4">
-        <Link>
-          <button className="bg-red-700 font-semibold py-1 hover:scale-105 transition-transform px-1 md:px-3 rounded-lg text-white">
-            Login
-          </button>
-        </Link>
-        <Link>
-          <button className="bg-red-700 font-semibold py-1 hover:scale-105 transition-transform px-1 md:px-3 rounded-lg text-white">
-            Register
-          </button>
-        </Link>
-      </div>
+      {user ? (
+        <div className="navbar-end ">
+          <details className="dropdown dropdown-end ">
+            <summary
+              className="btn bg-red-700 border-none rounded-full px-2 tooltip tooltip-bottom flex"
+              data-tip="Profile"
+            >
+              <CgProfile size={30} color="white" />
+            </summary>
+            <div className="p-4  menu dropdown-content z-[1] bg-white shadow-xl rounded-box w-80 space-y-8 ">
+              <div className="text-center space-y-2">
+              <div className="">
+                  {user.photoURL ? (
+                    <img className="w-1/3 mx-auto" src={user.photoURL} alt="" />
+                  ) : (
+                    <button className="rounded-full px-3 border-2 text-6xl font-bold bg-white text-red-700">
+                      {user.email.substring(0, 1).toUpperCase()}
+                    </button>
+                  )}
+                </div>
+                <div className="font-bold h-24">
+                  {user.displayName && <h1>{user.displayName}</h1>}
+                </div>
+              </div>
+              <div className="flex gap-2">
+                <button
+                  onClick={handleLogOut}
+                  className="block w-1/2 mx-auto p-1 text-center rounded-sm text-white font-bold bg-red-700"
+                >
+                  Log Out
+                </button>
+               
+              </div>
+            </div>
+          </details>
+        </div>
+      ) : (
+        <div className=" navbar-end space-x-1 md:space-x-4">
+          <Link to="/login">
+            <button className="bg-red-700 font-semibold py-1 hover:scale-105 transition-transform px-1 md:px-3 rounded-lg text-white">
+              Login
+            </button>
+          </Link>
+          <Link to="/register">
+            <button className="bg-red-700 font-semibold py-1 hover:scale-105 transition-transform px-1 md:px-3 rounded-lg text-white">
+              Register
+            </button>
+          </Link>
+        </div>
+      )}
     </div>
   );
 };
