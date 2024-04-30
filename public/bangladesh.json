@@ -38,13 +38,13 @@
         "country_Name": "Bangladesh",
         "location": "Bandarban District, Chittagong Hill Tracts, Bangladesh",
         "short_description": "Bandarban is known for its rugged terrain, dense forests, and diverse indigenous communities. It offers trekking opportunities to places like Nilgiri and Boga Lake.",
-        "average_cost": "$350 - $750",
+        "average_cost": 20000,
         "seasonality": "Autumn",
         "travel_time": 6,
         "totalVisitorsPerYear": 40000
       },
       {
-        "image": "https://example.com/saint-martins-island.jpg",
+        "image": "https://i.ibb.co/0DFxL4m/saint-martin.jpg",
         "tourists_spot_name": "Saint Martin’s Island",
         "country_Name": "Bangladesh",
         "location": "Saint Martin's Island, Bangladesh",

@@ -81,9 +81,9 @@ const Nav = () => {
             {navLinks}
           </ul>
         </div>
-        <a className="font-bold md:text-3xl">
-          <span className="text-red-700">Tour</span>Fusion
-        </a>
+        <Link to='/' className="font-bold md:text-3xl">
+          <h1><span className="text-red-700 ">Tour</span>Fusion</h1>
+        </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1 gap-4">{navLinks}</ul>
