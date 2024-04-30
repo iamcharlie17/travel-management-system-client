@@ -34,7 +34,7 @@ const SpotsOfCountry = () => {
               style={{ backgroundImage: `url(${spot.imageUrl})` }}
             ></div>
             <div className="flex flex-col gap-8 justify-between h-72">
-              <div>
+              <div >
                 <h1 className="text-xl font-bold">{spot.touristSpotName}</h1>
                 <h1 className="font-semibold">{spot.location}</h1>
                 <p>
