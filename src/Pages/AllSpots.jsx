@@ -1,8 +1,18 @@
 import { useLoaderData } from "react-router-dom";
 import Spot from "../components/Spot";
+// import { useState } from "react";
 
 const AllSpots = () => {
   const spots = useLoaderData();
+
+  // const [isSorted, setIsSorted] = useState(false);
+
+
+  const handleSortByAvgCost = () => {
+    console.log("data sorting");
+    // setIsSorted(!isSorted);
+  };
+  // console.log(isSorted);
 
   return (
     <div className="pt-16">
@@ -10,10 +20,12 @@ const AllSpots = () => {
         <div className="text-center">
           <h1 className="text-4xl  font-semibold">Tourist Spots</h1>
           <details className="dropdown">
-            <summary className="m-1 btn bg-red-700 text-white font-semibold px-6">Sort</summary>
+            <summary className="m-1 btn bg-red-700 text-white font-semibold px-6">
+              Sort
+            </summary>
             <ul className="p-2 shadow menu dropdown-content z-[1] bg-red-700 text-white rounded-box w-52">
               <li>
-                <a>Average cost</a>
+                <a onClick={handleSortByAvgCost}>Average cost</a>
               </li>
             </ul>
           </details>
@@ -24,6 +36,7 @@ const AllSpots = () => {
         {spots.map((spot) => (
           <Spot spot={spot} key={spot._id} />
         ))}
+        
       </div>
     </div>
   );

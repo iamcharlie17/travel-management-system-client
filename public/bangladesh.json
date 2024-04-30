@@ -1,58 +1,67 @@
 [
-    {
-        "image": "https://i.ibb.co/12CzhX4/sundarban.jpg",
-        "tourists_spot_name": "Sundarbans",
-        "country_Name": "Bangladesh",
-        "location": "Southern Bangladesh",
-        "short_description": "The world's largest mangrove forest, renowned for the Royal Bengal Tiger.",
-        "average_cost": 1500,  
-        "seasonality": "Winter (dry season - Nov to Feb)",
-        "travel_time": 7,
-        "totaVisitorsPerYear": 50000  
-      },
-      {
-        "image": "https://i.ibb.co/02hhk4y/cox-s-Bazar.jpg",
-        "tourists_spot_name": "Cox's Bazar",
-        "country_Name": "Bangladesh",
-        "location": "Southeastern Bangladesh",
-        "short_description": "World's longest natural sea beach, known for its scenic beauty and seafood.",
-        "average_cost": 1000,  
-        "seasonality": "Winter (dry season - Nov to Feb)",
-        "travel_time": 3,
-        "totaVisitorsPerYear": 400000  
-      },
-      {
-        "image": "https://example.com/rangamati.jpg",
-        "tourists_spot_name": "Rangamati",
-        "country_Name": "Bangladesh",
-        "location": "Rangamati District, Chittagong Hill Tracts, Bangladesh",
-        "short_description": "Rangamati is a picturesque hill district known for its serene beauty, lush green hills, and pristine lakes. It offers opportunities for boating, hiking, and exploring indigenous cultures.",
-        "average_cost": 15000,
-        "seasonality": "Spring",
-        "travel_time": 5,
-        "totalVisitorsPerYear": 30000
-      },
-      {
-        "image": "https://example.com/bandarban.jpg",
-        "tourists_spot_name": "Bandarban",
-        "country_Name": "Bangladesh",
-        "location": "Bandarban District, Chittagong Hill Tracts, Bangladesh",
-        "short_description": "Bandarban is known for its rugged terrain, dense forests, and diverse indigenous communities. It offers trekking opportunities to places like Nilgiri and Boga Lake.",
-        "average_cost": 20000,
-        "seasonality": "Autumn",
-        "travel_time": 6,
-        "totalVisitorsPerYear": 40000
-      },
-      {
-        "image": "https://i.ibb.co/0DFxL4m/saint-martin.jpg",
-        "tourists_spot_name": "Saint Martin’s Island",
-        "country_Name": "Bangladesh",
-        "location": "Saint Martin's Island, Bangladesh",
-        "short_description": "Saint Martin's Island is a tranquil paradise known for its crystal-clear waters, coral reefs, and pristine beaches. It offers snorkeling, diving, and relaxing beach activities.",
-        "average_cost": "$250 - $600",
-        "seasonality": "Monsoon",
-        "travel_time": 2,
-        "totalVisitorsPerYear": 20000
-      }
-      
+  {
+    "userName": "Riyad Hosen",
+    "email": "riyadhosen40@gmail.com",
+    "imageUrl": "https://i.ibb.co/12CzhX4/sundarban.jpg",
+    "touristSpotName": "Sundarbans",
+    "countryName": "Bangladesh",
+    "location": "Southern Bangladesh",
+    "shortDescription": "The world's largest mangrove forest, renowned for the Royal Bengal Tiger.",
+    "averageCost": 1500,
+    "season": "Winter (dry season - Nov to Feb)",
+    "travelTime": 7,
+    "totalVistorsPerYear": 50000
+  },
+  {
+    "userName": "Riyad Hosen",
+    "email": "riyadhosen40@gmail.com",
+    "imageUrl": "https://i.ibb.co/02hhk4y/cox-s-Bazar.jpg",
+    "touristSpotName": "Cox's Bazar",
+    "countryName": "Bangladesh",
+    "location": "Southeastern Bangladesh",
+    "shortDescription": "World's longest natural sea beach, known for its scenic beauty and seafood.",
+    "averageCost": 1000,
+    "season": "Winter (dry season - Nov to Feb)",
+    "travelTime": 3,
+    "totalVistorsPerYear": 400000
+  },
+  {
+    "userName": "Riyad Hosen",
+    "email": "riyadhosen40@gmail.com",
+    "imageUrl": "https://i.ibb.co/HpGXr1V/rangamati2.jpg",
+    "touristSpotName": "Rangamati",
+    "countryName": "Bangladesh",
+    "location": "Rangamati District, Chittagong Hill Tracts, Bangladesh",
+    "shortDescription": "Rangamati is a picturesque hill district known for its serene beauty, lush green hills, and pristine lakes. It offers opportunities for boating, hiking, and exploring indigenous cultures.",
+    "averageCost": 15000,
+    "season": "Spring",
+    "travelTime": 5,
+    "totalVistorsPerYear": 30000
+  },
+  {
+    "userName": "Riyad Hosen",
+    "email": "riyadhosen40@gmail.com",
+    "imageUrl": "https://i.ibb.co/0BsVWK6/bandarbans.jpg",
+    "touristSpotName": "Bandarban",
+    "countryName": "Bangladesh",
+    "location": "Bandarban District, Chittagong Hill Tracts, Bangladesh",
+    "shortDescription": "Bandarban is known for its rugged terrain, dense forests, and diverse indigenous communities. It offers trekking opportunities to places like Nilgiri and Boga Lake.",
+    "averageCost": 20000,
+    "season": "Autumn",
+    "travelTime": 6,
+    "totalVistorsPerYear": 40000
+  },
+  {
+    "userName": "Riyad Hosen",
+    "email": "riyadhosen40@gmail.com",
+    "imageUrl": "https://i.ibb.co/0DFxL4m/saint-martin.jpg",
+    "touristSpotName": "Saint Martin’s Island",
+    "countryName": "Bangladesh",
+    "location": "Saint Martin's Island, Bangladesh",
+    "shortDescription": "Saint Martin's Island is a tranquil paradise known for its crystal-clear waters, coral reefs, and pristine beaches. It offers snorkeling, diving, and relaxing beach activities.",
+    "averageCost": 425,
+    "season": "Monsoon",
+    "travelTime": 2,
+    "totalVistorsPerYear": 20000
+  }
 ]
