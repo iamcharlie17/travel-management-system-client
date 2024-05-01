@@ -3,6 +3,9 @@ import LatestSpot from "./LatestSpot";
 import { Link } from "react-router-dom";
 import { Typewriter } from "react-simple-typewriter";
 
+// import Lottie from "lottie-react";
+// import groovyWalkAnimation from "../../public/Animation - 1714523682708.json";
+
 const LatestSpots = () => {
   const [spots, setSpots] = useState([]);
   useEffect(() => {
@@ -16,6 +19,7 @@ const LatestSpots = () => {
   return (
     <div className="my-8">
       <div>
+        {/* <Lottie className="text-xl" size={5} animationData={groovyWalkAnimation} loop={true} /> */}
         <h1 className="text-center text-4xl font-semibold">
           <span>
             <Typewriter

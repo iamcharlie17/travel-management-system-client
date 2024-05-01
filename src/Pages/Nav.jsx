@@ -4,6 +4,7 @@ import { AuthContext } from "../providers/FirebaseProvider";
 import { CgProfile } from "react-icons/cg";
 import toast from "react-hot-toast";
 
+
 const Nav = () => {
   const { user, logOut } = useContext(AuthContext);
   // console.log(user);
@@ -81,8 +82,10 @@ const Nav = () => {
             {navLinks}
           </ul>
         </div>
-        <Link to='/' className="font-bold md:text-3xl">
-          <h1><span className="text-red-700 ">Tour</span>Fusion</h1>
+        <Link to="/" className="font-bold md:text-3xl">
+          <h1>
+            <span className="text-red-700 ">Tour</span>Fusion
+          </h1>
         </Link>
       </div>
       <div className="navbar-center hidden lg:flex">

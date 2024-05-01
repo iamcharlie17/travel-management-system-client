@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
+import { Fade } from "react-awesome-reveal";
 
 const SpotsOfCountry = () => {
   const [loadedSpots, setLoadedSpots] = useState([]);
@@ -19,7 +20,8 @@ const SpotsOfCountry = () => {
 //   console.log(spots);
 
   return (
-    <div className="pt-16">
+   <Fade duration={1000} triggerOnce direction="up">
+     <div className="pt-16">
         <div>
             <h1 className="text-4xl font-bold">{countryName.countryName}</h1>
         </div>
@@ -57,6 +59,7 @@ const SpotsOfCountry = () => {
         ))}
       </div>
     </div>
+   </Fade>
   );
 };
 
