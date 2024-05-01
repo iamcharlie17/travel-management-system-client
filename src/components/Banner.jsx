@@ -4,6 +4,7 @@
 
 // Import Swiper styles
 import "swiper/css";
+import { Typewriter } from "react-simple-typewriter";
 
 const Banner = () => {
   return (
@@ -17,15 +18,36 @@ const Banner = () => {
           }}
         >
           <div className="text-center p-8 space-y-8 border-2 border-white rounded-lg mt-8 mx-2 shadow-2xl md:mx-20 lg:mx-40 bg-yellow-950 bg-opacity-15">
-            <h1 className=" text-3xl md:text-5xl font-bold text-white">
+            {/* <h1 className=" text-3xl md:text-5xl font-bold text-white">
               Discover Your Next Adventure
+            </h1> */}
+            <h1 className="text-3xl md:text-5xl font-bold text-white">
+              Discover Your Next{" "}
+              <span className="text-red-700 font-bold">
+                {/* Style will be inherited from the parent element */}
+                <Typewriter
+                  words={[
+                    "Adventure!",
+                    "Exploration!",
+                    "Expedition!",
+                    "Venture!",
+                  ]}
+                  // loop={5}
+                  cursor
+                  cursorStyle="_"
+                  typeSpeed={70}
+                  deleteSpeed={50}
+                  delaySpeed={1000}
+                  loop={5}
+                />
+              </span>
             </h1>
             <p className="text-white">
               Embark on unforgettable journeys with our comprehensive tourism
               management website. Explore diverse destinations, find exclusive
               deals, and plan your dream getaway with ease. Let us be your guide
-              to a world of excitement and discovery.be your guide
-              to a world of excitement and discovery.
+              to a world of excitement and discovery.be your guide to a world of
+              excitement and discovery.
             </p>
             <div className="md:w-1/2 mx-auto">
               <label className="input input-bordered flex items-center gap-2">
@@ -67,7 +89,23 @@ const Banner = () => {
         >
           <div className="text-center p-8 space-y-8 border-2 border-white rounded-lg mt-8 mx-2 shadow-2xl md:mx-20 lg:mx-40 bg-pink-950 bg-opacity-15">
             <h1 className=" text-3xl md:text-5xl font-bold text-white">
-              Your Gateway to Travel Excellence
+              Your Gateway to Travel{" "}
+              <span className="text-red-700 font-bold">
+                <Typewriter
+                  words={[
+                    "Excellence!",
+                    "Distinction!",
+                    "Superiority!",
+                    "Mastery!",
+                  ]}
+                  cursor
+                  cursorStyle="_"
+                  typeSpeed={70}
+                  deleteSpeed={50}
+                  delaySpeed={1000}
+                  loop={5}
+                />
+              </span>
             </h1>
             <p className="text-white">
               Elevate your travel experiences with our cutting-edge tourism
@@ -116,7 +154,18 @@ const Banner = () => {
         >
           <div className="text-center p-8 space-y-8 border-2 border-white rounded-lg mt-8 mx-2 shadow-2xl md:mx-20 lg:mx-40 bg-amber-700 bg-opacity-15">
             <h1 className=" text-3xl md:text-5xl font-bold text-white">
-              Experience the World, Your Way
+              Experience the World, Your {' '}
+              <span className="text-red-700 font-bold">
+                <Typewriter 
+                words={['Way!', 'Path!', 'Approach!', 'Avenue!']}
+                cursor
+                  cursorStyle="_"
+                  typeSpeed={70}
+                  deleteSpeed={50}
+                  delaySpeed={1000}
+                  loop={5}
+                />
+              </span>
             </h1>
             <p className="text-white">
               Tailor-made travel awaits on our innovative tourism management
