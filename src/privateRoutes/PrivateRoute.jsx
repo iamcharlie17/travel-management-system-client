@@ -9,7 +9,7 @@ const PrivateRoute = ({ children }) => {
   if (loading) {
     return (
       <div className="min-h-screen py-64">
-        <div className="mx-auto w-16 h-16 border-4 border-dashed rounded-full animate-spin border-[#3fb89a]"></div>
+        <div className="mx-auto w-16 h-16 border-4 border-dashed rounded-full animate-spin border-red-700"></div>
       </div>
     );
   }
