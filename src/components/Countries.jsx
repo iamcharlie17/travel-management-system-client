@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Country from "./Country";
+import { Typewriter } from "react-simple-typewriter";
 
 const Countries = () => {
   const [loadedCountries, setLoadedCountries] = useState([]);
@@ -15,7 +16,19 @@ const Countries = () => {
   return (
     <div className="my-8">
       <div className="text-center">
-        <h1 className="text-4xl font-semibold">Countries</h1>
+        <h1 className="text-4xl font-semibold">
+          <span>
+            <Typewriter
+              words={["Countries"]}
+              cursor
+              cursorStyle="_"
+              typeSpeed={70}
+              deleteSpeed={50}
+              delaySpeed={1000}
+              loop={5}
+            />
+          </span>
+        </h1>
       </div>
       <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-4 my-4">
         {countries.map((country) => (

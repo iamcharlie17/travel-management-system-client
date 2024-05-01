@@ -4,6 +4,7 @@ import "swiper/css";
 import "swiper/css/bundle";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import Review from "./Review";
+import { Typewriter } from "react-simple-typewriter";
 
 const Reviews = () => {
   const [reviews, setReviews] = useState([]);
@@ -18,9 +19,31 @@ const Reviews = () => {
     <div className=" p-8 md:p-16">
       <div className="text-center space-y-4 mb-4 md:mb-16">
         <h1 className="text-2xl font-semibold text-red-700">
-          CUSTOMER REVIEWS
+          <span>
+            <Typewriter
+              words={[" CUSTOMER REVIEWS"]}
+              cursor
+              cursorStyle="|"
+              typeSpeed={70}
+              deleteSpeed={50}
+              delaySpeed={1000}
+              loop={5}
+            />
+          </span>
         </h1>
-        <h2 className="text-4xl font-black">What is Our Customer Say</h2>
+        <h2 className="text-4xl font-black">
+          <span>
+            <Typewriter
+              words={["What is Our Customer Say"]}
+              cursor
+              cursorStyle="|"
+              typeSpeed={70}
+              deleteSpeed={50}
+              delaySpeed={1500}
+              loop={5}
+            />
+          </span>
+        </h2>
       </div>
       <Swiper
         spaceBetween={30}
