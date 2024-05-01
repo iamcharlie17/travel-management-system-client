@@ -1,18 +1,23 @@
 import { useLoaderData } from "react-router-dom";
 import Spot from "../components/Spot";
+import { useState } from "react";
 // import { useState } from "react";
 
 const AllSpots = () => {
-  const spots = useLoaderData();
+  const loadedSpots = useLoaderData();
+
+  const [spots, setSpots] = useState(loadedSpots)
 
   // const [isSorted, setIsSorted] = useState(false);
 
 
   const handleSortByAvgCost = () => {
     console.log("data sorting");
-    // setIsSorted(!isSorted);
+    fetch('http://localhost:3000/all-tourist-spots/sort-by-average-cost')
+    .then(res => res.json())
+    .then(data => setSpots(data))
   };
-  // console.log(isSorted);
+ 
 
   return (
     <div className="pt-16">
